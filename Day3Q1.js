@@ -1,10 +1,9 @@
+// Question: Return a new array with only the even numbers squared.
+// Example:
+// Input: [1, 2, 3, 4]  
+// Output: [4, 16]
 
-// Reverse array without using built-in reverse method
-function reverseArray(arr){
-    let revArr = [];
-    for (let i = arr.length - 1; i >=0 ; i--){
-        revArr.push(arr[i]);
-    }
-    return revArr;
-}
-console.log(reverseArray([1,2,3,4,5]));
+const arr = [1, 2, 3, 4];
+let even = arr.filter(num => num % 2 == 0);
+console.log("arr",arr);
+console.log("even",even);
